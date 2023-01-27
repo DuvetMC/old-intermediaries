@@ -1,5 +1,4 @@
 v1	official	intermediary
-CLASS	com/mojang/minecraft/Entity	net/minecraft/class_1
 FIELD	com/mojang/minecraft/Entity	F	bbHeight	bbHeight
 FIELD	com/mojang/minecraft/Entity	Lcom/mojang/minecraft/phys/AABB;	bb	field_1
 FIELD	com/mojang/minecraft/Entity	F	bbWidth	bbWidth
@@ -28,13 +27,11 @@ METHOD	com/mojang/minecraft/Entity	(FFF)V	setPos	setPos
 METHOD	com/mojang/minecraft/Entity	(FF)V	setSize	setSize
 METHOD	com/mojang/minecraft/Entity	()V	tick	tick
 METHOD	com/mojang/minecraft/Entity	(FF)V	turn	turn
-CLASS	com/mojang/minecraft/HitResult	net/minecraft/class_2
 FIELD	com/mojang/minecraft/HitResult	I	f	field_1
 FIELD	com/mojang/minecraft/HitResult	I	type	type
 FIELD	com/mojang/minecraft/HitResult	I	x	field_3
 FIELD	com/mojang/minecraft/HitResult	I	y	field_4
 FIELD	com/mojang/minecraft/HitResult	I	z	field_5
-CLASS	com/mojang/minecraft/Minecraft	net/minecraft/class_4
 FIELD	com/mojang/minecraft/Minecraft	Ljava/lang/String;	VERSION_STRING	VERSION_STRING
 FIELD	com/mojang/minecraft/Minecraft	Z	appletMode	appletMode
 FIELD	com/mojang/minecraft/Minecraft	I	editMode	editMode
@@ -83,7 +80,6 @@ METHOD	com/mojang/minecraft/Minecraft	(I)V	setupFog	setupFog
 METHOD	com/mojang/minecraft/Minecraft	(FII)V	setupPickCamera	setupPickCamera
 METHOD	com/mojang/minecraft/Minecraft	()V	stop	stop
 METHOD	com/mojang/minecraft/Minecraft	()V	tick	tick
-CLASS	com/mojang/minecraft/MinecraftApplet	net/minecraft/class_27
 FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/awt/Canvas;	canvas	canvas
 FIELD	com/mojang/minecraft/MinecraftApplet	Lcom/mojang/minecraft/Minecraft;	minecraft	minecraft
 FIELD	com/mojang/minecraft/MinecraftApplet	Ljava/lang/Thread;	thread	thread
@@ -93,11 +89,9 @@ METHOD	com/mojang/minecraft/MinecraftApplet	()V	start	start
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	startGameThread	startGameThread
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	stop	stop
 METHOD	com/mojang/minecraft/MinecraftApplet	()V	stopGameThread	stopGameThread
-CLASS	com/mojang/minecraft/MinecraftApplet$1	net/minecraft/class_27$1
 FIELD	com/mojang/minecraft/MinecraftApplet$1	Lcom/mojang/minecraft/MinecraftApplet;	this$0	this$0
 METHOD	com/mojang/minecraft/MinecraftApplet$1	()V	addNotify	addNotify
 METHOD	com/mojang/minecraft/MinecraftApplet$1	()V	removeNotify	removeNotify
-CLASS	com/mojang/minecraft/Player	net/minecraft/class_3
 CLASS	com/mojang/minecraft/Timer	net/minecraft/class_6
 FIELD	com/mojang/minecraft/Timer	J	MAX_NS_PER_UPDATE	MAX_NS_PER_UPDATE
 FIELD	com/mojang/minecraft/Timer	I	MAX_TICKS_PER_UPDATE	MAX_TICKS_PER_UPDATE
@@ -110,7 +104,6 @@ FIELD	com/mojang/minecraft/Timer	I	ticks	ticks
 FIELD	com/mojang/minecraft/Timer	F	ticksPerSecond	ticksPerSecond
 FIELD	com/mojang/minecraft/Timer	F	timeScale	timeScale
 METHOD	com/mojang/minecraft/Timer	()V	advanceTime	advanceTime
-CLASS	com/mojang/minecraft/character/Cube	net/minecraft/class_7
 FIELD	com/mojang/minecraft/character/Cube	Z	compiled	compiled
 FIELD	com/mojang/minecraft/character/Cube	I	list	list
 FIELD	com/mojang/minecraft/character/Cube	[Lcom/mojang/minecraft/character/Polygon;	polygons	polygons
@@ -128,29 +121,24 @@ METHOD	com/mojang/minecraft/character/Cube	()V	compile	compile
 METHOD	com/mojang/minecraft/character/Cube	()V	render	render
 METHOD	com/mojang/minecraft/character/Cube	(FFF)V	setPos	setPos
 METHOD	com/mojang/minecraft/character/Cube	(II)V	setTexOffs	setTexOffs
-CLASS	com/mojang/minecraft/character/Polygon	net/minecraft/class_8
 FIELD	com/mojang/minecraft/character/Polygon	I	vertexCount	vertexCount
 FIELD	com/mojang/minecraft/character/Polygon	[Lcom/mojang/minecraft/character/Vertex;	vertices	vertices
 METHOD	com/mojang/minecraft/character/Polygon	()V	render	render
-CLASS	com/mojang/minecraft/character/Vec3	net/minecraft/class_9
 FIELD	com/mojang/minecraft/character/Vec3	F	x	field_14
 FIELD	com/mojang/minecraft/character/Vec3	F	y	field_15
 FIELD	com/mojang/minecraft/character/Vec3	F	z	field_16
 METHOD	com/mojang/minecraft/character/Vec3	(Lcom/mojang/minecraft/character/Vec3;F)Lcom/mojang/minecraft/character/Vec3;	interpolateTo	interpolateTo
 METHOD	com/mojang/minecraft/character/Vec3	(FFF)V	set	set
-CLASS	com/mojang/minecraft/character/Vertex	net/minecraft/class_10
 FIELD	com/mojang/minecraft/character/Vertex	Lcom/mojang/minecraft/character/Vec3;	pos	pos
 FIELD	com/mojang/minecraft/character/Vertex	F	u	field_17
 FIELD	com/mojang/minecraft/character/Vertex	F	v	field_18
 METHOD	com/mojang/minecraft/character/Vertex	(FF)Lcom/mojang/minecraft/character/Vertex;	remap	remap
-CLASS	com/mojang/minecraft/character/Zombie	net/minecraft/class_11
 FIELD	com/mojang/minecraft/character/Zombie	F	rotA	rotA
 FIELD	com/mojang/minecraft/character/Zombie	F	rot	rot
 FIELD	com/mojang/minecraft/character/Zombie	F	speed	speed
 FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/renderer/Textures;	textures	textures
 FIELD	com/mojang/minecraft/character/Zombie	F	timeOffs	timeOffs
 FIELD	com/mojang/minecraft/character/Zombie	Lcom/mojang/minecraft/character/ZombieModel;	zombieModel	zombieModel
-CLASS	com/mojang/minecraft/character/ZombieModel	net/minecraft/class_20
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	arm0	arm0
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	arm1	arm1
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	body	body
@@ -158,13 +146,10 @@ FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	leg0	leg0
 FIELD	com/mojang/minecraft/character/ZombieModel	Lcom/mojang/minecraft/character/Cube;	leg1	leg1
 METHOD	com/mojang/minecraft/character/ZombieModel	(F)V	render	render
-CLASS	com/mojang/minecraft/comm/ConnectionListener	net/minecraft/class_29
 METHOD	com/mojang/minecraft/comm/ConnectionListener	(BILjava/nio/ByteBuffer;)V	command	command
 METHOD	com/mojang/minecraft/comm/ConnectionListener	(Ljava/lang/Exception;)V	handleException	handleException
-CLASS	com/mojang/minecraft/comm/ServerListener	net/minecraft/class_30
 METHOD	com/mojang/minecraft/comm/ServerListener	(Lcom/mojang/minecraft/comm/SocketConnection;)V	clientConnected	clientConnected
 METHOD	com/mojang/minecraft/comm/ServerListener	(Lcom/mojang/minecraft/comm/SocketConnection;Ljava/lang/Exception;)V	clientException	clientException
-CLASS	com/mojang/minecraft/comm/SocketConnection	net/minecraft/class_31
 FIELD	com/mojang/minecraft/comm/SocketConnection	I	BUFFER_SIZE	BUFFER_SIZE
 FIELD	com/mojang/minecraft/comm/SocketConnection	I	bytesRead	bytesRead
 FIELD	com/mojang/minecraft/comm/SocketConnection	Z	connected	connected
@@ -189,20 +174,17 @@ METHOD	com/mojang/minecraft/comm/SocketConnection	()Z	isConnected	isConnected
 METHOD	com/mojang/minecraft/comm/SocketConnection	(Lcom/mojang/minecraft/comm/ConnectionListener;)V	setConnectionListener	setConnectionListener
 METHOD	com/mojang/minecraft/comm/SocketConnection	(I)V	setMaxBlocksPerIteration	setMaxBlocksPerIteration
 METHOD	com/mojang/minecraft/comm/SocketConnection	()V	tick	tick
-CLASS	com/mojang/minecraft/comm/SocketServer	net/minecraft/class_32
 FIELD	com/mojang/minecraft/comm/SocketServer	Ljava/util/List;	connections	connections
 FIELD	com/mojang/minecraft/comm/SocketServer	Ljava/util/logging/Logger;	logger	logger
 FIELD	com/mojang/minecraft/comm/SocketServer	Lcom/mojang/minecraft/comm/ServerListener;	serverListener	serverListener
 FIELD	com/mojang/minecraft/comm/SocketServer	Ljava/nio/channels/ServerSocketChannel;	ssc	ssc
 METHOD	com/mojang/minecraft/comm/SocketServer	()V	tick	tick
-CLASS	com/mojang/minecraft/gui/Font	net/minecraft/class_33
 FIELD	com/mojang/minecraft/gui/Font	[I	charWidths	charWidths
 FIELD	com/mojang/minecraft/gui/Font	I	fontTexture	fontTexture
 METHOD	com/mojang/minecraft/gui/Font	(Ljava/lang/String;III)V	draw	draw
 METHOD	com/mojang/minecraft/gui/Font	(Ljava/lang/String;IIIZ)V	draw	draw
 METHOD	com/mojang/minecraft/gui/Font	(Ljava/lang/String;III)V	drawShadow	drawShadow
 METHOD	com/mojang/minecraft/gui/Font	(Ljava/lang/String;)I	width	width
-CLASS	com/mojang/minecraft/level/Chunk	net/minecraft/class_12
 FIELD	com/mojang/minecraft/level/Chunk	Lcom/mojang/minecraft/phys/AABB;	aabb	aabb
 FIELD	com/mojang/minecraft/level/Chunk	J	dirtiedTime	dirtiedTime
 FIELD	com/mojang/minecraft/level/Chunk	Z	dirty	dirty
@@ -227,13 +209,11 @@ METHOD	com/mojang/minecraft/level/Chunk	()V	rebuild	rebuild
 METHOD	com/mojang/minecraft/level/Chunk	(I)V	rebuild	rebuild
 METHOD	com/mojang/minecraft/level/Chunk	(I)V	render	render
 METHOD	com/mojang/minecraft/level/Chunk	()V	setDirty	setDirty
-CLASS	com/mojang/minecraft/level/DirtyChunkSorter	net/minecraft/class_21
 FIELD	com/mojang/minecraft/level/DirtyChunkSorter	Lcom/mojang/minecraft/renderer/Frustum;	frustum	frustum
 FIELD	com/mojang/minecraft/level/DirtyChunkSorter	J	now	now
 FIELD	com/mojang/minecraft/level/DirtyChunkSorter	Lcom/mojang/minecraft/Player;	player	player
 METHOD	com/mojang/minecraft/level/DirtyChunkSorter	(Lcom/mojang/minecraft/level/Chunk;Lcom/mojang/minecraft/level/Chunk;)I	compare	compare
 METHOD	com/mojang/minecraft/level/DirtyChunkSorter	(Ljava/lang/Object;Ljava/lang/Object;)I	compare	compare
-CLASS	com/mojang/minecraft/level/Level	net/minecraft/class_14
 FIELD	com/mojang/minecraft/level/Level	I	TILE_UPDATE_INTERVAL	TILE_UPDATE_INTERVAL
 FIELD	com/mojang/minecraft/level/Level	[B	blocks	blocks
 FIELD	com/mojang/minecraft/level/Level	I	depth	depth
@@ -255,17 +235,14 @@ METHOD	com/mojang/minecraft/level/Level	(Lcom/mojang/minecraft/level/LevelListen
 METHOD	com/mojang/minecraft/level/Level	()V	save	save
 METHOD	com/mojang/minecraft/level/Level	(IIII)Z	setTile	setTile
 METHOD	com/mojang/minecraft/level/Level	()V	tick	tick
-CLASS	com/mojang/minecraft/level/LevelGen	net/minecraft/class_34
 FIELD	com/mojang/minecraft/level/LevelGen	I	depth	depth
 FIELD	com/mojang/minecraft/level/LevelGen	I	height	height
 FIELD	com/mojang/minecraft/level/LevelGen	Ljava/util/Random;	random	random
 FIELD	com/mojang/minecraft/level/LevelGen	I	width	width
 METHOD	com/mojang/minecraft/level/LevelGen	()[B	generateMap	generateMap
-CLASS	com/mojang/minecraft/level/LevelListener	net/minecraft/class_15
 METHOD	com/mojang/minecraft/level/LevelListener	()V	allChanged	allChanged
 METHOD	com/mojang/minecraft/level/LevelListener	(IIII)V	lightColumnChanged	lightColumnChanged
 METHOD	com/mojang/minecraft/level/LevelListener	(III)V	tileChanged	tileChanged
-CLASS	com/mojang/minecraft/level/LevelRenderer	net/minecraft/class_16
 FIELD	com/mojang/minecraft/level/LevelRenderer	I	CHUNK_SIZE	CHUNK_SIZE
 FIELD	com/mojang/minecraft/level/LevelRenderer	I	MAX_REBUILDS_PER_FRAME	MAX_REBUILDS_PER_FRAME
 FIELD	com/mojang/minecraft/level/LevelRenderer	[Lcom/mojang/minecraft/level/Chunk;	chunks	chunks
@@ -280,15 +257,12 @@ METHOD	com/mojang/minecraft/level/LevelRenderer	(Lcom/mojang/minecraft/Player;I)
 METHOD	com/mojang/minecraft/level/LevelRenderer	(Lcom/mojang/minecraft/HitResult;II)V	renderHit	renderHit
 METHOD	com/mojang/minecraft/level/LevelRenderer	(IIIIII)V	setDirty	setDirty
 METHOD	com/mojang/minecraft/level/LevelRenderer	(Lcom/mojang/minecraft/Player;)V	updateDirtyChunks	updateDirtyChunks
-CLASS	com/mojang/minecraft/level/NoiseMap	net/minecraft/class_22
 FIELD	com/mojang/minecraft/level/NoiseMap	I	fuzz	fuzz
 FIELD	com/mojang/minecraft/level/NoiseMap	I	levels	levels
 FIELD	com/mojang/minecraft/level/NoiseMap	Ljava/util/Random;	random	random
 FIELD	com/mojang/minecraft/level/NoiseMap	I	seed	seed
 METHOD	com/mojang/minecraft/level/NoiseMap	(II)[I	read	read
-CLASS	com/mojang/minecraft/level/tile/Bush	net/minecraft/class_28
 CLASS	com/mojang/minecraft/level/tile/DirtTile	net/minecraft/class_23
-CLASS	com/mojang/minecraft/level/tile/GrassTile	net/minecraft/class_24
 CLASS	com/mojang/minecraft/level/tile/Tile	net/minecraft/class_18
 FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile;	bush	bush
 FIELD	com/mojang/minecraft/level/tile/Tile	Lcom/mojang/minecraft/level/tile/Tile;	dirt	dirt
@@ -311,7 +285,6 @@ METHOD	com/mojang/minecraft/level/tile/Tile	(Lcom/mojang/minecraft/renderer/Tess
 METHOD	com/mojang/minecraft/level/tile/Tile	(Lcom/mojang/minecraft/renderer/Tesselator;IIII)V	renderFaceNoTexture	renderFaceNoTexture
 METHOD	com/mojang/minecraft/level/tile/Tile	(Lcom/mojang/minecraft/level/Level;IIII)Z	shouldRenderFace	shouldRenderFace
 METHOD	com/mojang/minecraft/level/tile/Tile	(Lcom/mojang/minecraft/level/Level;IIILjava/util/Random;)V	tick	tick
-CLASS	com/mojang/minecraft/particle/Particle	net/minecraft/class_25
 FIELD	com/mojang/minecraft/particle/Particle	I	age	age
 FIELD	com/mojang/minecraft/particle/Particle	I	lifetime	lifetime
 FIELD	com/mojang/minecraft/particle/Particle	F	size	size
@@ -322,14 +295,12 @@ FIELD	com/mojang/minecraft/particle/Particle	F	xd	field_27
 FIELD	com/mojang/minecraft/particle/Particle	F	yd	field_28
 FIELD	com/mojang/minecraft/particle/Particle	F	zd	field_29
 METHOD	com/mojang/minecraft/particle/Particle	(Lcom/mojang/minecraft/renderer/Tesselator;FFFFFF)V	render	render
-CLASS	com/mojang/minecraft/particle/ParticleEngine	net/minecraft/class_26
 FIELD	com/mojang/minecraft/particle/ParticleEngine	Lcom/mojang/minecraft/level/Level;	level	level
 FIELD	com/mojang/minecraft/particle/ParticleEngine	Ljava/util/List;	particles	particles
 FIELD	com/mojang/minecraft/particle/ParticleEngine	Lcom/mojang/minecraft/renderer/Textures;	textures	textures
 METHOD	com/mojang/minecraft/particle/ParticleEngine	(Lcom/mojang/minecraft/particle/Particle;)V	add	add
 METHOD	com/mojang/minecraft/particle/ParticleEngine	(Lcom/mojang/minecraft/Player;FI)V	render	render
 METHOD	com/mojang/minecraft/particle/ParticleEngine	()V	tick	tick
-CLASS	com/mojang/minecraft/phys/AABB	net/minecraft/class_19
 FIELD	com/mojang/minecraft/phys/AABB	F	epsilon	epsilon
 FIELD	com/mojang/minecraft/phys/AABB	F	x0	field_34
 FIELD	com/mojang/minecraft/phys/AABB	F	x1	field_35
@@ -344,7 +315,6 @@ METHOD	com/mojang/minecraft/phys/AABB	(FFF)Lcom/mojang/minecraft/phys/AABB;	expa
 METHOD	com/mojang/minecraft/phys/AABB	(FFF)Lcom/mojang/minecraft/phys/AABB;	grow	grow
 METHOD	com/mojang/minecraft/phys/AABB	(Lcom/mojang/minecraft/phys/AABB;)Z	intersects	intersects
 METHOD	com/mojang/minecraft/phys/AABB	(FFF)V	move	move
-CLASS	com/mojang/minecraft/renderer/Frustum	net/minecraft/class_13
 FIELD	com/mojang/minecraft/renderer/Frustum	I	A	field_24
 FIELD	com/mojang/minecraft/renderer/Frustum	I	BACK	BACK
 FIELD	com/mojang/minecraft/renderer/Frustum	I	B	field_25
@@ -371,7 +341,6 @@ METHOD	com/mojang/minecraft/renderer/Frustum	(Lcom/mojang/minecraft/phys/AABB;)Z
 METHOD	com/mojang/minecraft/renderer/Frustum	([[FI)V	normalizePlane	normalizePlane
 METHOD	com/mojang/minecraft/renderer/Frustum	(FFF)Z	pointInFrustum	pointInFrustum
 METHOD	com/mojang/minecraft/renderer/Frustum	(FFFF)Z	sphereInFrustum	sphereInFrustum
-CLASS	com/mojang/minecraft/renderer/Tesselator	net/minecraft/class_17
 FIELD	com/mojang/minecraft/renderer/Tesselator	I	MAX_FLOATS	MAX_FLOATS
 FIELD	com/mojang/minecraft/renderer/Tesselator	I	MAX_MEMORY_USE	MAX_MEMORY_USE
 FIELD	com/mojang/minecraft/renderer/Tesselator	[F	array	array
@@ -397,14 +366,11 @@ METHOD	com/mojang/minecraft/renderer/Tesselator	()V	noColor	noColor
 METHOD	com/mojang/minecraft/renderer/Tesselator	(FF)V	tex	tex
 METHOD	com/mojang/minecraft/renderer/Tesselator	(FFF)V	vertex	vertex
 METHOD	com/mojang/minecraft/renderer/Tesselator	(FFFFF)V	vertexUV	vertexUV
-CLASS	com/mojang/minecraft/renderer/Textures	net/minecraft/class_5
 FIELD	com/mojang/minecraft/renderer/Textures	Ljava/util/HashMap;	idMap	idMap
 METHOD	com/mojang/minecraft/renderer/Textures	(Ljava/lang/String;I)I	loadTexture	loadTexture
-CLASS	com/mojang/minecraft/server/Client	net/minecraft/class_35
 FIELD	com/mojang/minecraft/server/Client	Lcom/mojang/minecraft/comm/SocketConnection;	serverConnection	serverConnection
 FIELD	com/mojang/minecraft/server/Client	Lcom/mojang/minecraft/server/MinecraftServer;	server	server
 METHOD	com/mojang/minecraft/server/Client	()V	disconnect	disconnect
-CLASS	com/mojang/minecraft/server/MinecraftServer	net/minecraft/class_36
 FIELD	com/mojang/minecraft/server/MinecraftServer	Ljava/util/Map;	clientMap	clientMap
 FIELD	com/mojang/minecraft/server/MinecraftServer	Ljava/util/List;	clients	clients
 FIELD	com/mojang/minecraft/server/MinecraftServer	Lcom/mojang/minecraft/comm/SocketServer;	socketServer	socketServer

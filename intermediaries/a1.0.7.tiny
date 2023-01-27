@@ -3446,7 +3446,6 @@ FIELD	ms	I	b	field_2329
 METHOD	ms	(Ljava/lang/Object;)Z	equals	equals
 METHOD	ms	()I	hashCode	hashCode
 CLASS	n	net/minecraft/class_122
-CLASS	net/minecraft/client/Minecraft	net/minecraft/class_4
 FIELD	net/minecraft/client/Minecraft	Lmm;	A	field_1244
 FIELD	net/minecraft/client/Minecraft	Lla;	B	field_1470
 FIELD	net/minecraft/client/Minecraft	Ljava/io/File;	C	field_1471
@@ -3534,7 +3533,6 @@ METHOD	net/minecraft/client/Minecraft	()Lhe;	r	method_1457
 METHOD	net/minecraft/client/Minecraft	()V	run	run
 METHOD	net/minecraft/client/Minecraft	()V	s	method_1394
 METHOD	net/minecraft/client/Minecraft	()V	t	method_1458
-CLASS	net/minecraft/client/MinecraftApplet	net/minecraft/class_27
 FIELD	net/minecraft/client/MinecraftApplet	Ljava/awt/Canvas;	a	field_1065
 FIELD	net/minecraft/client/MinecraftApplet	Lnet/minecraft/client/Minecraft;	b	field_1063
 FIELD	net/minecraft/client/MinecraftApplet	Ljava/lang/Thread;	c	field_1064
@@ -3545,7 +3543,6 @@ METHOD	net/minecraft/client/MinecraftApplet	()V	destroy	destroy
 METHOD	net/minecraft/client/MinecraftApplet	()V	init	init
 METHOD	net/minecraft/client/MinecraftApplet	()V	start	start
 METHOD	net/minecraft/client/MinecraftApplet	()V	stop	stop
-CLASS	net/minecraft/isom/IsomPreviewApplet	net/minecraft/class_422
 FIELD	net/minecraft/isom/IsomPreviewApplet	Lab;	a	field_2051
 METHOD	net/minecraft/isom/IsomPreviewApplet	()V	start	start
 METHOD	net/minecraft/isom/IsomPreviewApplet	()V	stop	stop

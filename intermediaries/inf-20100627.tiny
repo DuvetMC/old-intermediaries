@@ -2688,7 +2688,6 @@ METHOD	n	(IIII)V	a	method_1241
 METHOD	n	(Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;	a	method_1242
 METHOD	n	(IIII)V	b	method_1243
 METHOD	n	(IIII)Z	c	method_1406
-CLASS	net/minecraft/client/MinecraftApplet	net/minecraft/class_27
 FIELD	net/minecraft/client/MinecraftApplet	Lat;	a	field_1063
 FIELD	net/minecraft/client/MinecraftApplet	Ljava/lang/Thread;	b	field_1064
 FIELD	net/minecraft/client/MinecraftApplet	Ljava/awt/Canvas;	c	field_1065
@@ -2697,7 +2696,6 @@ METHOD	net/minecraft/client/MinecraftApplet	()V	destroy	destroy
 METHOD	net/minecraft/client/MinecraftApplet	()V	init	init
 METHOD	net/minecraft/client/MinecraftApplet	()V	start	start
 METHOD	net/minecraft/client/MinecraftApplet	()V	stop	stop
-CLASS	net/minecraft/isom/IsomPreviewApplet	net/minecraft/class_422
 FIELD	net/minecraft/isom/IsomPreviewApplet	Lbb;	a	field_2051
 METHOD	net/minecraft/isom/IsomPreviewApplet	()V	start	start
 METHOD	net/minecraft/isom/IsomPreviewApplet	()V	stop	stop
