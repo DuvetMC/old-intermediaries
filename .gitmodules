@@ -1,0 +1,4 @@
+[submodule "matches"]
+	path = matches
+	url = https://github.com/DuvetMC/matches.git
+	branch = main
