@@ -6844,7 +6844,7 @@ METHOD	uk	(Z)Luk;	a	method_2173
 METHOD	uk	(I)I	b	method_680
 METHOD	uk	(Ljava/lang/String;)Luk;	b	method_3484
 METHOD	uk	(Lwc;)I	b	method_3201
-METHOD	uk	(Lwc;Lti;Luo;)Lwc;	b	method_682
+METHOD	uk	(Lwc;Lti;Luo;)Lwc;	b	method_682b
 METHOD	uk	()Ljava/lang/String;	c	method_2094
 METHOD	uk	(I)I	c	method_2171
 METHOD	uk	(Lwc;)Lwe;	c	method_3200

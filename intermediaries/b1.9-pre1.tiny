@@ -6715,7 +6715,7 @@ METHOD	ue	(Lvw;Lxq;Lxq;)Z	a	method_816
 METHOD	ue	(Z)Lue;	a	method_2173
 METHOD	ue	(I)I	b	method_2171
 METHOD	ue	(Lvw;)Lvy;	b	method_3200
-METHOD	ue	(Lvw;Ltd;Lui;)Lvw;	b	method_682
+METHOD	ue	(Lvw;Ltd;Lui;)Lvw;	b	method_682b
 METHOD	ue	()Ljava/lang/String;	c	method_2094
 METHOD	ue	(I)I	c	method_2599
 METHOD	ue	(Lvw;)I	c	method_3201
