@@ -6274,7 +6274,7 @@ METHOD	sv	(Lul;Lwd;Lwd;)Z	a	method_816
 METHOD	sv	(Z)Lsv;	a	method_2173
 METHOD	sv	(I)I	b	method_2171
 METHOD	sv	(Lul;)Lun;	b	method_3200
-METHOD	sv	(Lul;Lrv;Lsz;)Lul;	b	method_682
+METHOD	sv	(Lul;Lrv;Lsz;)Lul;	b	method_682b
 METHOD	sv	()Ljava/lang/String;	c	method_2094
 METHOD	sv	(I)I	c	method_2599
 METHOD	sv	(Lul;)I	c	method_3201

@@ -7156,7 +7156,7 @@ METHOD	vf	(Z)Lvf;	a	method_2173
 METHOD	vf	(I)I	b	method_2599
 METHOD	vf	(Ljava/lang/String;)Lvf;	b	method_3484
 METHOD	vf	(Lwy;)I	b	method_3201
-METHOD	vf	(Lwy;Luc;Lvj;)Lwy;	b	method_682
+METHOD	vf	(Lwy;Luc;Lvj;)Lwy;	b	method_682b
 METHOD	vf	()Ljava/lang/String;	c	method_2094
 METHOD	vf	(I)I	c	method_2171
 METHOD	vf	(Lwy;)Lxb;	c	method_3200

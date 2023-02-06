@@ -6239,7 +6239,7 @@ METHOD	su	(Lul;Lwc;Lwc;)Z	a	method_816
 METHOD	su	(Z)Lsu;	a	method_2173
 METHOD	su	(I)I	b	method_2171
 METHOD	su	(Lul;)Lun;	b	method_3200
-METHOD	su	(Lul;Lru;Lsz;)Lul;	b	method_682
+METHOD	su	(Lul;Lru;Lsz;)Lul;	b	method_682b
 METHOD	su	()Ljava/lang/String;	c	method_2094
 METHOD	su	(I)I	c	method_2599
 METHOD	su	(Lul;)I	c	method_3201
