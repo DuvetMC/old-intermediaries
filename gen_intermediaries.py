@@ -2,7 +2,7 @@ from requests import get
 from glob import glob
 import os
 
-stitch_regex = '"[^/]+|com/mojang/.+|net/minecraft/.+|a/.+|b/.+"'
+stitch_regex = '"^[a-z/]+$"'
 
 matches: dict[str, tuple[str, str]] = {}
 for match in glob('matches/client/**/*.match', recursive=True):
@@ -28,13 +28,18 @@ current_item = versions_without_previous_match[0]
 while current_item in matches.keys():
     f = current_item
     t, match = matches[f]
-    print('Generating intermediary for %s -> %s' % (f, t))
     input_location = 'versions/%s/client.jar' % f
     output_location = 'versions/%s/client.jar' % t
     intermediary_in = 'intermediaries/%s.tiny' % f
     intermediary_out = 'intermediaries/%s.tiny' % t
 
-    function = 'java -Dstitch.counter=counter.txt -jar %s updateIntermediary %s %s %s %s %s -p %s' % (
+    if os.path.exists(intermediary_out):
+        print('Intermediary for %s -> %s already exists, skipping...' % (f, t))
+        current_item = t
+        continue
+
+    print('Generating intermediary for %s -> %s' % (f, t))
+    function = 'java -jar %s updateIntermediary %s %s %s %s %s -p %s' % (
         stitch_jar, input_location, output_location, intermediary_in, intermediary_out, match, stitch_regex
     )
 
